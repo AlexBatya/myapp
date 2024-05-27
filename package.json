@@ -4,10 +4,11 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": "webpack --config webpack.main.config.js && webpack --config webpack.preload.config.js && webpack --config webpack.renderer.config.js",
-		"start": "npm run build && electron .",
-		"dist": "npm run build && electron-builder",
-		"package": "electron-builder"
+		"build-main": "webpack --config webpack.main.config.js",
+		"build-preload": "webpack --config webpack.preload.config.js",
+		"build-renderer": "webpack --config webpack.renderer.config.js",
+		"build": "npm run build-main && npm run build-preload && npm run build-renderer",
+		"start": "electron ."
   },
   "devDependencies": {
     "@types/node": "^14.14.37",
