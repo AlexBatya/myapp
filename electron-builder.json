@@ -1,0 +1,16 @@
+{
+  "appId": "com.example.yourapp",
+  "productName": "YourAppName",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "build/**/*",
+    "node_modules/**/*",
+    "package.json",
+    "public/**/*"
+  ],
+  "win": {
+    "target": "nsis"
+  }
+}

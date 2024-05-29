@@ -5,19 +5,18 @@ module.exports = {
   entry: './src/preload/preload.ts',
   target: 'electron-preload',
   module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        include: /src/,
-        use: 'ts-loader',
-      },
-    ],
+		rules: [
+			{
+				test: /\.ts$/,
+				include: /src/,
+				use: 'ts-loader',
+			},
+		],
   },
   resolve: {
     extensions: ['.ts', '.js'],
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: 'preload.js',
   },
 };

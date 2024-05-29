@@ -1,13 +1,24 @@
 import * as React from 'react';
-import goos from './img/goos.jpg';
+import VideoStream from './components/video.components';
+import './styles/style.css';
 
 const App: React.FC = () => {
-  console.log('Image path:', goos);
+  const handleClose = () => {
+		console.log(window.electron)
+		if (window.electron) {
+			window.electron.sendIpcMessage('close-window', {});  // добавлен второй аргумент, если требуется
+		} else {
+			console.error("Какое-то гейство");
+		}
+  };
+
   return (
-    <div className="app">
-      <h1>Соси писУн</h1>
-      <img src={goos} alt="Goose" />
-    </div>
+		<div className="app">
+
+			<i onClick={handleClose} className="close icon-close"></i>
+			<VideoStream />
+
+		</div>
   );
 };
 

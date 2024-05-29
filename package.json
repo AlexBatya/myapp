@@ -4,11 +4,13 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-		"build-main": "webpack --config webpack.main.config.js",
-		"build-preload": "webpack --config webpack.preload.config.js",
-		"build-renderer": "webpack --config webpack.renderer.config.js",
-		"build": "npm run build-main && npm run build-preload && npm run build-renderer",
-		"start": "electron ."
+    "build-main": "webpack --config webpack.main.config.js",
+    "build-preload": "webpack --config webpack.preload.config.js",
+    "build-renderer": "webpack --config webpack.renderer.config.js",
+    "build": "npm run build-main && npm run build-preload && npm run build-renderer",
+    "start": "npm run build && electron .",
+    "test": "electron .",
+		"dist": "electron-builder"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",
@@ -27,22 +29,21 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "node-rtsp-stream": "^0.0.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "build": {
-		"appId": "com.myapp.electron",
-		"directories": {
-			"output": "dist"
-		},
-		"win": {
-			"target": "nsis"
-		},
-		"files": [
-			"dist/**/*"
-		],
-		"directories": {
-			"buildResources": "assets"
-		}
+    "appId": "com.myapp.electron",
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "dist/**/*"
+    ]
   }
 }

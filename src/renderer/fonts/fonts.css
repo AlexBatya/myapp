@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./icomoon.eot?8tax72');
+  src:  url('./icomoon.eot?8tax72#iefix') format('embedded-opentype'),
+  url('./icomoon.ttf?8tax72') format('truetype'),
+  url('./icomoon.woff?8tax72') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info:before {
+  content: "\e901";
+}
+.icon-person:before {
+  content: "\e902";
+}
+.icon-ticket:before {
+  content: "\e900";
+}
+.icon-home:before {
+  content: "\e903";
+}
+.icon-connection:before {
+  content: "\e91b";
+}
+.icon-stopwatch:before {
+  content: "\e952";
+}
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-unlocked:before {
+  content: "\e990";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus:before {
+  content: "\ea0b";
+}
+.icon-close:before {
+  content: "\ea0f";
+}
+.icon-menu:before {
+  content: "\ea7a";
+}
