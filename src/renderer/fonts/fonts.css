@@ -25,32 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-info:before {
+
+.icon-close-svgrepo-com:before {
   content: "\e901";
-}
-.icon-person:before {
-  content: "\e902";
-}
-.icon-ticket:before {
-  content: "\e900";
+  color: #080341;
 }
 .icon-home:before {
-  content: "\e903";
+  content: "\e900";
 }
-.icon-connection:before {
-  content: "\e91b";
-}
-.icon-stopwatch:before {
-  content: "\e952";
-}
-.icon-lock:before {
-  content: "\e98f";
-}
-.icon-unlocked:before {
-  content: "\e990";
-}
-.icon-plus:before {
-  content: "\ea0a";
+.icon-menu:before {
+  content: "\e9bd";
 }
 .icon-minus:before {
   content: "\ea0b";
@@ -58,6 +42,6 @@
 .icon-close:before {
   content: "\ea0f";
 }
-.icon-menu:before {
-  content: "\ea7a";
+.icon-checkbox:before {
+  content: "\ea53";
 }

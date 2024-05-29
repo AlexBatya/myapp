@@ -1,6 +1,6 @@
 .videoStream{
 	width: 100%;
-	height: 100vh;
+	height: 99.3vh;
 }
 
 .video{
@@ -25,3 +25,5 @@
 .btmStart:hover{
 	background: red;
 }
+
+
