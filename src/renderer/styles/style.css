@@ -1,1 +1,6 @@
-
+.app{
+	width: 100%;
+	height: 100vh; /* or 100% if you have other parent container constraints */
+	position: relative;
+	overflow: hidden;
+}

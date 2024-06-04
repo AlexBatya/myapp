@@ -1,17 +1,34 @@
-import * as React from 'react';
-import VideoStream from './components/video.components';
+import React, { useState } from 'react';
 import './styles/style.css';
 
-import Header from './components/header.components' 
+import VideoStream from './components/video.components'
+import Header from './components/header.components';
 
 const App: React.FC = () => {
- 
+  const [showHeader, setShowHeader] = useState(false);
+
+  const handleMouseEnter = () => {
+		setShowHeader(true);
+  };
+
+  const handleMouseLeave = () => {
+		setShowHeader(false);
+  };
+
+  const style: any = {
+		borderRadius: '5px',
+		background: 'rgba(0, 0, 0, 0)'
+  };
 
   return (
-		<div className="app">
-
-			<Header />	
-
+		<div
+			style={style}
+			className="app"
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}
+		>
+			<Header />
+			{/* Other components */}
 		</div>
   );
 };

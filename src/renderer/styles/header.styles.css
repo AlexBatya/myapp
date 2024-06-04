@@ -4,26 +4,35 @@ header{
 	height: 25px;
 }
 
-header .header__body{
+.header__body{
 	background: #467996; 	
-	top: 0;
+	top: -25px;
 	left: 0;
-	position: absolute;
+	position: fixed;
 	width: 100%;
-	height: 100%;
+	height: 25px;
 	z-index: 5;
+	transition: top 0.3s ease-in-out;
 	box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.3);
+	-webkit-app-region: drag; /* Make header draggable */
 }
 
-header .header__body .header__body__container{
+.header__body.visible {
+  top: 0; /* Visible position */
+}
+
+.header__body .header__body__container{
 	width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
 }
 
+.controll i {
+  -webkit-app-region: no-drag; /* Prevent buttons from dragging the window */
+}
 
-header .header__body .header__body__container .controll{
+.header__body .header__body__container .controll{
 	padding: 0 10px;
 	width: 100%;
 	display: flex;

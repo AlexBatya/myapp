@@ -10,7 +10,7 @@
     "build": "npm run build-main && npm run build-preload && npm run build-renderer",
     "start": "npm run build && electron .",
     "test": "electron .",
-		"dist": "electron-builder"
+    "dist": "electron-builder"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",
